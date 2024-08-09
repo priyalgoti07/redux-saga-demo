@@ -1,0 +1,50 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+
+/* Header Style */
+
+.headre {
+  background-color: orange;
+  height: 100px;
+}
+
+.cart-div {
+  float: right;
+  position: relative;
+  margin: 25px;
+}
+
+.count-div {
+  position: absolute;
+  right: 3px;
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  top: -17px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-container {}
