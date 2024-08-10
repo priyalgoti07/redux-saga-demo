@@ -7,6 +7,7 @@ export const Addtocart = (data) => {
 }
 
 export const Removetocart = (data) => {
+    console.log("datainAction------->",data);
     return {
         type: REMOVE_TO_CART,
         data: data
