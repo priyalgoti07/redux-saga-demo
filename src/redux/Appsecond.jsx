@@ -8,17 +8,16 @@ import { Deletetocart } from './action';
 function Appsecond() {
   const dispatch = useDispatch();
   const AllreducerData = useSelector(state => state)
-  console.log("AllreducerData-------->",AllreducerData);
+
   useEffect(() => {
     dispatch(ProductList())
   }, [])
+
   return (
-    <>
-      
-    
+    <div>
       <div>
-        <button onClick={() => dispatch(Deletetocart(product))}>DeleteTocart</button>
-      </div> 
+        <button onClick={() => dispatch(Deletetocart(AllreducerData))}>DeleteTocart</button>
+      </div>
       <br />
       <div className='product-container'>
         {
@@ -41,7 +40,7 @@ function Appsecond() {
           })
         }
       </div >
-    </>
+    </div>
   )
 }
 

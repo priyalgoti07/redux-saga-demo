@@ -1,8 +1,8 @@
+import "../App.css"
 import React from 'react'
 import cartSVG from "../assets/cart.svg"
-import "../App.css"
-import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
+import { useDispatch, useSelector } from 'react-redux'
 import { productSearch } from '../redux/productAction'
 
 export const Headre = () => {

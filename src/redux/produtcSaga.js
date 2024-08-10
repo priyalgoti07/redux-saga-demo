@@ -10,9 +10,9 @@ function* getProducts() {
 function* SearchProducts(data) {
     let searchData = yield fetch(`http://localhost:3005/Products?category=${data.query}`)
     searchData = yield searchData.json()
-    console.log("i am Dta", searchData);
     yield put({ type: SET_PRODUCT_LIST, data: searchData })
 }
+
 //Watcher saga
 function* productSaga() {
     yield takeEvery(PRODUCT_LIST, getProducts)

@@ -1,13 +1,12 @@
-import React from 'react'
-import { useSelector } from 'react-redux'
-import { Link } from 'react-router-dom'
 import '../App.css'
+import React from 'react'
+import { Link } from 'react-router-dom'
+import { useSelector } from 'react-redux'
 
 export const Cart = () => {
     const cartData = useSelector(state => state.cartData)
     let amount = cartData.length && cartData.map((item) => item.price).reduce((prev, next) => prev + next)
-    console.log("amount--->", amount);
-    console.log("cartData------>", cartData);
+
     return (
         <div>
             <Link to={'/'}>
